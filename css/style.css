@@ -1,0 +1,219 @@
+/*
+    Author: YOUR NAME
+    File: css/style.css
+    Description: Site-wide styles for the Daily Chronicle newspaper project.
+*/
+
+/* Global reset / base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header styling */
+.site-header {
+    background-image: linear-gradient(to right, #222, #444);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.tagline {
+    margin-top: 5px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: #333;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px 15px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: #f1c40f;
+    color: #222;
+}
+
+/* Layout */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px 40px 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+h3 {
+    color: #444;
+}
+
+/* Hero section on home/promotion page */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.hero img {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.promo-price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.price {
+    color: #c0392b;
+    font-size: 1.3rem;
+}
+
+/* Buttons */
+.cta-button {
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #e74c3c;
+}
+
+/* Highlight messages for JavaScript feedback */
+.highlight-message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Two-column layout (used in about and company pages) */
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Reviews page styles */
+.rating-list {
+    padding-left: 20px;
+}
+
+.rating-list li {
+    margin-bottom: 8px;
+}
+
+/* Form styles */
+form {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.char-count {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Support page details element styling */
+details {
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 12px;
+    background-color: #333;
+    color: #f5f5f5;
+    font-size: 0.85rem;
+}
